@@ -5,13 +5,18 @@
     box-sizing: 0;
     -moz-box-sizing: 0;
     -webkit-box-sizing: 0;
+}
 
+header {
+
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 2rem;
 }
 
 body {
     margin: 20px;
     background-color: rgb(115, 144, 144);
-    
 }
 
 form {
@@ -22,12 +27,10 @@ form {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px ;
     top: 10px;
-    max-width:min-content;
-    
+    max-width:min-content; 
 }
 
 .container {
-  
   margin: 10px ;
   border: 5px solid color black;
   display:flex ;
@@ -36,7 +39,6 @@ form {
 }
 
 legend {
-    
     font-size: 16px ;
     margin-top: 10 px ;
     margin: 10px ;
@@ -62,10 +64,9 @@ label {
 }
 
 .inputgenero {
-   
   padding: 10px;
   font-size: 14px ;
-   margin: 10px ;
+  margin: 10px ;
     
 }
 
@@ -78,8 +79,7 @@ label {
     align-items: center;
     border-radius: 4px;
     font-size: 10px;
-    cursor: pointer;
-        
+    cursor: pointer;   
 }
 
 input::placeholder,
