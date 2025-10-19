@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <header>Formulario de registro</header>
+    <form 
+        action="/ruta/del/script" 
+        method="post" 
+        target="_blank" 
+        autocomplete="on" 
+        novalidate 
+        name="formularioderegistro" 
+        accept-charset="UTF-8" 
+        onsubmit="return validarFormulario()" 
+        rel="noopener noreferrer">
+        
+        
+        
+            <fieldset>
+                
+                    <legend><strong>Datos personales</strong></legend>
+                    
+                        <div class="container">
+
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required/>
+
+                            <div tabindex="0"></div>
+                        
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
+                            <div tabindex="0"></div>
+                                                                                   
+                        </div>
+                            
+                        <div class="container">
+                                
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad" min="0" max="100"required>
+
+                        </div>                       
+                    
+
+                        <div class="inputgenero">
+                            <p>Género:</p>
+                            <input type="radio" id="hombre" name="genero" value="hombre">
+                            <label for="hombre">Hombre</label><br>
+                            <input type="radio" id="mujer" name="genero" value="mujer">
+                            <label for="mujer">Mujer</label>
+                
+                            <div tabindex="0"></div>
+                        </div>
+
+                        <div class="container">
+
+                            <label for="mesientodelclub">Me siento del club:</label>
+                            <input type="radio" id="mesientodelclub" name="mesientodelclub" value="mesientodelclub">
+                            <div tabindex="0"></div>
+                           
+                        </div>
+
+                        <div class="container">
+                           <label for="escribealgosobreti">Sobre ti:</label>
+                           <textarea id="escribealgosobreti" name="escribealgosobreti" rows="6" cols="70" placeholder="Cuéntanos algo más sobre ti" autofocus></textarea>
+                           <div tabindex="0"></div>              
+
+                        </div>
+
+                    
+
+                        <div class="inputreset">
+                             <input type="reset" value="Reiniciar">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    
+
+               
+            </fieldset>
+    </form>
+
+    
+</body>
+</html></div>
