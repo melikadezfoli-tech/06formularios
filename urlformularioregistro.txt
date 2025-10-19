@@ -1,1 +1,2 @@
-https://github.com/melikadezfoli-tech/06formularios
+https://github.com/melikadezfoli-tech/06formularios/blob/main/formularioregistro.html
+https://github.com/melikadezfoli-tech/06formularios/blob/main/formrobobici.html
