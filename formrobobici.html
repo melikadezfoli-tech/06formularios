@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro robo</title>
+</head>
+    <link rel="stylesheet" href="css/main.css">
+
+
+<body>
+
+    <header>Registro robo de bicicleta</header>
+    <form 
+        action="/ruta/del/script" 
+        method="post" 
+        target="_blank" 
+        autocomplete="on" 
+        novalidate 
+        name="formularioderegistro" 
+        accept-charset="UTF-8" 
+        onsubmit="return validarFormulario()" 
+        rel="noopener noreferrer">
+   
+            <fieldset>
+                
+                    <legend><strong>Formulario de registro de robo de bicicleta</strong></legend>
+                    
+                        <div class="container">
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" name="hora" required/>
+
+                            <div tabindex="0"></div>
+                        
+                        </div>
+
+                        <div class="container">
+                            <label for="colorbici">Color de la bicicleta:</label>
+                            <input type="color" id="colorbici" name="colorbici" required>
+                            <div tabindex="0"></div>
+                                                                                   
+                        </div>
+                            
+                        <div class="container">
+                                
+                            <label for="rangodeprecio">Rango de precio:</label>
+                            <input type="range" id="rangodeprecio" name="rangodeprecio" min="0€" max="3000€"required>
+
+                        </div>                       
+                                           
+                        <h2>Tipo de bicicleta</h2>
+                            <div class="container">
+                            
+                                <label for="tipobici">Urbana:</label>
+                                <select id="tipobici" name="tipobici">
+                                    <option value="cl">Clásica</option>
+                                    <option value="pl">Plegable</option>
+                                    <option value="el">Eléctrica</option>
+                                    <option value="co">Commuter</option>
+                                </select>
+
+                                <label for="tipobici">Montaña:</label>
+                                <select id="tipobici" name="tipobici">
+                                    <option value="sp">Sport</option>
+                                    <option value="tr">Trail o Hard trail</option>
+                                    <option value="xc">XC o Cross Country</option>
+                                </select>
+                        
+                                <label for="tipobici">Carreras:</label>
+                                <select id="tipobici" name="tipobici">
+                                    <option value="gf">Gran fondo</option>
+                                    <option value="Ra">Racing</option>
+                                    <option value="Ae">Aero</option>
+                                </select>
+
+                            </div>
+
+                            <div class:container>
+                      
+                                <label for="accesorios">Accesorios:</label>
+                                <select multiple name="accesorios" id="accesorios" >
+                                    <option>Ruedines</option>
+                                    <option>Hinchadores</option>
+                                    <option>Bomba de aire</option>
+                                    <option>Alforja</option>
+                                    <option>Silla Portabebé</option>
+                                </multiple>
+                            </div>
+
+                            <div class:container>
+
+                                <label>¿Qué marca era?:<input list="marcas" name="marcabici"
+                                /></label>
+                                <datalist id="marcas" >
+                                    <option value="spc">specialized</option>
+                                    <option value="tk">trek</option>
+                                    <option value="me">merida</option>
+                                    <option value="st">scott</option>
+                                    <option value="gi">giant</option>
+                                    <option value="cb">cube</option>
+                                    <option value="lp">lapierre</option>
+                                    <option value="or">orbea</option>
+                                    <option value="ce">cannondale</option>
+                                    <option value="bm">bmc</option>
+                                    <option value="cy">canyon</option>
+                                    <option value="lo">look</option>
+                                    <option value="pk">protek</option>
+                                    <option value="me">megamo</option>
+                                    <option value="pin">pinarello</option>
+                                    <option value="bch">bianchi</option>
+                                    <option value="bh">bh</option>
+                                    <option value="fac">factor</option>
+                                    <option value="ght">ghost</option>
+                                    <option value="cv">cervelo</option>
+                                    <option value="ag">argon</option>
+                                </datalist>
+                            </div>
+
+                        
+            </fieldset>
+    </form>
+
+    
+</body>
+</html>
