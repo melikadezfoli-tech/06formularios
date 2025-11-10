@@ -10,15 +10,15 @@
 <body>
 
     <header>Registro de datos personales</header>
-    <form 
-        action="/ruta/del/script" 
+    <form id="formularioregistro"
+        action="js/main.js" 
         method="post" 
         target="_blank" 
         autocomplete="on" 
         novalidate 
         name="formularioderegistro" 
         accept-charset="UTF-8" 
-        onsubmit="return validarFormulario()" 
+        onsubmit="return formulario()" 
         rel="noopener noreferrer">
         
         
@@ -76,15 +76,15 @@
                     
 
                         <div class="inputreset">
-                             <input type="reset" value="Reiniciar">
-                            <input type="submit" value="Enviar">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Reiniciar</button>
                         </div>
                     
 
                
             </fieldset>
     </form>
-
+<script src="js/main.js"></script>
     
 </body>
 </html>
